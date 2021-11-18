@@ -57,7 +57,6 @@ body {
   background: #fff;
   border-radius: 1rem;
   overflow: hidden;
-  /* -webkit-box-shadow: 2px 9px 7px 1px rgba(56,41,224,0.22);  */
   box-shadow: 2px 9px 7px 1px rgba(56,41,224,0.22);
 }
 
@@ -127,11 +126,15 @@ body {
   font-weight: var(--font-bold);
 
   outline: none;
+
+  box-shadow: 2px 9px 7px 1px rgba(56,41,224,0.22);
 }
 
 .btn.secondary {
   background: transparent;
   color: var(--desaturated-blue);
+
+  box-shadow: none;
 }
 
 .btn:hover, a:hover {
