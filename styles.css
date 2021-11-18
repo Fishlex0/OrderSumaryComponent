@@ -57,6 +57,8 @@ body {
   background: #fff;
   border-radius: 1rem;
   overflow: hidden;
+  /* -webkit-box-shadow: 2px 9px 7px 1px rgba(56,41,224,0.22);  */
+  box-shadow: 2px 9px 7px 1px rgba(56,41,224,0.22);
 }
 
 .card-body {
@@ -139,6 +141,10 @@ body {
 .btn.secondary:hover {
   opacity: 1;
   color: var(--dark-blue);
+}
+
+.attribution {
+  margin-top: var(--content-spacing);
 }
 
 @media (min-width: 481px) {
