@@ -1,0 +1,154 @@
+:root {
+  /* COLOR */
+  --primary-color:  hsl(225, 100%, 94%);
+  --accent-color: hsl(245, 75%, 52%); 
+  --pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  /* FONT */
+  --main-font-size: 16px;
+  --main-font-family: 'Red Hat Display', sans-serif;
+  --font-regular: 500;
+  --font-bold: 700;
+  --font-bolder: 900;
+
+  /* BACKGROUND */
+  --desktop-background: url(./images/pattern-background-desktop.svg);
+  --mobile-background: url(./images/pattern-background-mobile.svg);
+
+  /* SPACING */
+  --content-spacing: 1em;
+}
+
+html {
+  font-size: var(--main-font-size);
+  font-family: var(--main-font-family);
+
+  line-height: 1.5;
+  color: var(--desaturated-blue);
+
+  background-color: var(--primary-color);
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: var(--mobile-background);
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.container img {
+  width: 100%;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 2em var(--content-spacing);
+  text-align: center;
+}
+
+.card-body h1 {
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+
+  font-weight: var(--font-bolder);
+}
+
+.card-body p {
+  max-width: 80%;
+  margin: var(--content-spacing) auto;
+}
+
+.card-body .plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: var(--pale-blue);
+
+  border-radius: 0.5rem;
+
+  padding: var(--content-spacing);
+  margin-bottom: var(--content-spacing);
+}
+
+.plan-type {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 0.9rem;
+}
+
+.plan-type span {
+  color: var(--dark-blue);
+  font-weight: var(--font-bolder);
+}
+
+.plan a {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  font-weight: var(--font-bold);
+}
+
+.card-body .plan img {
+  width: 50px;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  width: 100%;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: .5rem;
+
+  background: var(--accent-color);
+  color: #fff;
+  font-weight: var(--font-bold);
+
+  outline: none;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--desaturated-blue);
+}
+
+.btn:hover, a:hover {
+  opacity: 0.7;
+}
+
+.btn.secondary:hover {
+  opacity: 1;
+  color: var(--dark-blue);
+}
+
+@media (min-width: 481px) {
+  body {
+    background: var(--desktop-background);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    max-width: 50vh;
+  }
+}
