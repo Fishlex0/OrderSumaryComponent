@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Fishlex0/OrderSumaryComponent
+- Live Site URL: https://fishlex0.github.io/OrderSumaryComponent/
 
 ## My process
 
